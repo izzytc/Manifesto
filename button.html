@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+<body>
+<style>
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: yellow;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-size: 20px;
+  font-size: 20px;
+font-family: 'Roboto', sans-serif;}
+
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: yellow;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+
+   
+}
+
+
+.button2 {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: pink;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-size: 20px;
+  font-size: 20px;
+font-family: 'Roboto', sans-serif;}
+
+}
+
+.button2:hover {background-color: #3e8e41}
+
+.button2:active {
+  background-color: pink;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button3 {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: blue;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-size: 20px;
+font-family: 'Roboto', sans-serif;}
+
+}
+
+.button3:hover {background-color: #3e8e41}
+
+.button3:active {
+  background-color: blue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+body{
+  background: white;
+  padding-top: 10px;
+
+} 
+
+p{
+  color: black; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+p:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+p a{
+  color: lime;
+  text-decoration: none;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: white;
+}
+
+</style>
+
+  
+
+</head>
+<body>
+<center>
+<p>Hi there. Click Below</p>
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+<button class="button" button onclick="myFunction()">Click Me First</button>
+
+<button class="button2" button2 onclick="myFunction2()">Click Me Second</button>
+
+<button class="button3" button3 onclick="myFunction3()">Click me Last</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    alert("A vital error occured!");
+}
+
+function myFunction2() {
+    alert("Unknown Error");
+}
+
+
+
+function myFunction3() {
+    document.getElementById("demo").innerHTML = "Scroll down";
+}
+</script>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+<a href="popup.html">
+<img border="0" alt="" src="clickme.jpg" width="50%" height="50%">
+
+</body>
+</html>
