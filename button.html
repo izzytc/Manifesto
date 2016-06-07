@@ -9,21 +9,21 @@
   text-align: center;
   cursor: pointer;
   outline: none;
-  color: #fff;
-  background-color: yellow;
+  color: black;
+  background-color: #ffddfe;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
-  font-size: 20px;
-  font-size: 20px;
-font-family: 'Roboto', sans-serif;}
+  font-size: 18px;
+  
+   font-family: 'Roboto', sans-serif;}
 
 }
 
-.button:hover {background-color: #3e8e41}
+.button:hover {background-color: #fdbdfb}
 
 .button:active {
-  background-color: yellow;
+  background-color:#ffb7f4;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 
@@ -38,8 +38,8 @@ font-family: 'Roboto', sans-serif;}
   text-align: center;
   cursor: pointer;
   outline: none;
-  color: #fff;
-  background-color: pink;
+  color: black;
+  background-color: #b0bdfb;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
@@ -52,7 +52,7 @@ font-family: 'Roboto', sans-serif;}
 .button2:hover {background-color: #3e8e41}
 
 .button2:active {
-  background-color: pink;
+  background-color: #a0affd;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -63,8 +63,8 @@ font-family: 'Roboto', sans-serif;}
   text-align: center;
   cursor: pointer;
   outline: none;
-  color: #fff;
-  background-color: blue;
+  color: black;
+  background-color: #a0edfd;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
@@ -73,14 +73,36 @@ font-family: 'Roboto', sans-serif;}
 
 }
 
-.button3:hover {background-color: #3e8e41}
+.button3:hover {background-color: #8ce8fc}
 
 .button3:active {
-  background-color: blue;
+  background-color: #77e2f9;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
+.button4 {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #a4ffaa;
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;}
+
+}
+
+.button4:hover {background-color: #68ff73}
+
+.button4:active {
+  background-color:#68ff73;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 body{
   background: white;
@@ -89,18 +111,19 @@ body{
 } 
 
 p{
-  color: black; 
+  color: #b7c3ff; 
   font-family: 'Roboto', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   margin: 10px 0 0 10px;
   white-space: nowrap;
   overflow: hidden;
   width: 30em;
-  animation: type 4s steps(60, end); 
+  animation: type 4s steps(50, end); 
+
 }
 
 p:nth-child(2){
-  animation: type2 8s steps(60, end);
+  animation: type2 8s steps(50, end);
 }
 
 p a{
@@ -130,30 +153,32 @@ span{
   background: white;
 }
 
+h1{
+  font-family: 'Roboto', sans-serif;
+
+}
 </style>
 
   
-
-</head>
 <body>
 <center>
-<p>Hi there. Click Below</p>
+<p>HI THERE. TO GET STARTED FOLLOW THE INSTRUCTIONS</p>
 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-<button class="button" button onclick="myFunction()">Click Me First</button>
+<button class="button" button onclick="myFunction()">CLICK ME FIRST</button>
 
-<button class="button2" button2 onclick="myFunction2()">Click Me Second</button>
+<button class="button2" button2 onclick="myFunction2()">CLICK ME SECOND</button>
 
-<button class="button3" button3 onclick="myFunction3()">Click me Last</button>
+<button class="button3" button3 onclick="myFunction3()">CLICK ME LAST</button>
 
 <p id="demo"></p>
 
 <script>
 function myFunction() {
-    alert("A vital error occured!");
+    alert("There was an error loading this document. Please try again.");
 }
 
 function myFunction2() {
-    alert("Unknown Error");
+    alert("An unknown error has occurred. If the problem persists, contact your provider.");
 }
 
 
@@ -167,8 +192,104 @@ function myFunction3() {
 
 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
-<a href="popup.html">
-<img border="0" alt="" src="clickme.jpg" width="50%" height="50%">
+<style>
+img {
+opacity: 1.0;
+filter: alpha(opacity=100); 
+}
+
+img:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=50); 
+}
+
+
+
+    div.container4 {
+    height: 10em;
+    position: relative }
+div.container4 p {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+</style>
+</head>
+
+<body>
+
+
+<center>
+
+<img onclick ="myFunction4()" img src="clickme.jpg" width="50%" height="50%"></img>
+
+<script>
+function myFunction4() {
+    alert("An error has occurred due to the previous error. Please scroll down to get me to function.");
+}
+</script>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+<center>
+
+<img onclick ="myFunction5()" img src="clickme.png" style="width:200px;"></img>
+
+<script>
+function myFunction5() {
+    alert("Warning-consistent error messages may result in losing files. Scroll down to fix persisting issues.");
+}
+
+</script>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+
+
+ <center><img alt="" src="use.jpg" onmouseover="this.src='move.jpg'" onmouseout="this.src='use.jpg'" width="55%" align="center" ><center>
+
+ <h1> Frustrated? Keep scrolling for me to function! </h1>
+
+ <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+<center>
+
+<img onclick ="myFunction6()" img src="scroll.png" style="width:200px;"></img>
+
+<script>
+function myFunction6() {
+    alert("Oops! Exceeded number of error messages. Tell the provider to shift the focus to function, not aesthetics. Keep scrolling I might still function...");
+}
+</script>
+
+ <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+
+<h1>Hmm still no functionality..</h1>
+<br> <br>
+
+<img src="2.jpg" width=70%></img>
+
+<br> <br> 
+<br> <br>
+
+
+<a href="index.html" class="button4">CLICK FOR NEXT USER</a>
+<br> <br>
+
+
+
 
 </body>
 </html>
